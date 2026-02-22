@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- <button id="btn">click here</button>  -->
+    <!-- --------------------------------------------- -->
+    <!-- <div id="log">
+   <input type="email" id="email" placeholder="Enter email">
+   <input type="password" id="pass" placeholder="Enter password">
+   <button id="logbtn">click here</button> 
+
+   </div>
+
+   <div></div>
+   
+<div id="quizBox" style="display: none;">
+    <input type="number" id="Count" placeholder="Enter number of questions">
+    <button id="startBtn">Start</button>
+
+    <h3 id="question"></h3>
+    <input type="number" id="answerInput" placeholder="Your answer">
+    <button id="submitAnswer">Submit</button>
+</div> -->
+    <!-- ---------------------------------------------------- -->
+    <!-- ================= Login Section ================= -->
+    <main id="logform">
+      <div class="container py-5">
+        <h1>Login Form</h1>
+
+        <form>
+          <div class="mb-3">
+            <label>User Email</label>
+            <input type="email" class="form-control" id="useremail" />
+          </div>
+
+          <div class="mb-3">
+            <label>User Password</label>
+            <input type="password" class="form-control" id="userpass" />
+          </div>
+
+          <button id="logbtn" class="btn btn-primary">Login</button>
+        </form>
+
+        <div id="errMess" class="alert alert-danger mt-3 d-none">
+          Invalid Email Or Password
+        </div>
+
+        <div id="succMess" class="alert alert-success mt-3 d-none">
+          Login Successfully
+        </div>
+      </div>
+    </main>
+
+    <!-- ================= Test Section ================= -->
+    <section id="test" class="d-none">
+      <div class="container py-5">
+        <div class="mb-3">
+          <label>Enter Number Of Questions</label>
+          <input type="number" class="form-control my-3" id="questionsNum" />
+        </div>
+
+        <button class="btn btn-primary mb-4" id="strTestBtn">Start Test</button>
+
+        <div id="testScreen"></div>
+
+        <!-- Submit button hidden initially -->
+        <button id="submitBtn" class="btn btn-success mt-3 d-none">
+          Submit Answers
+        </button>
+        <div id="scoreResult" class="mt-3 fw-bold"></div>
+        <button id="logoutBtn" class="btn btn-danger mt-3">Logout</button>
+      </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
